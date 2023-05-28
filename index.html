@@ -1011,7 +1011,19 @@
             } else {
                 statusValue += "<td>不是" + yanshi4.toString() + "分，少于4分</td></tr>";
             }
-            statusValue += "<tr><td>信效度</td><td>" + PDQcounts.toString() + "总分,根据最大值匹配，左灵敏度右边特异度</td><td>" + statusRecord.xinxiaodu.toString() + "</td></tr>";
+            statusValue += "<tr><td>信效度</td><td>" + PDQcounts.toString() + "总分,自己根据最大值对照匹配，左灵敏度右边特异度</td><td>" + `
+                12: [100, 10.3],
+                13: [98.6, 16.7],
+                22: [96.0, 61.5],
+                23: [94.7, 64.1],
+                25: [90.7, 70.5],
+                28: [86.7, 82.1],
+                29: [84.0, 85.9],
+                31: [74.7, 91.0],
+                34: [65.3, 93.6],
+                36: [60.0, 94.9],
+                41: [45.3, 98.7],
+                42: [41.3, 100.0]` + "</td></tr>";
             document.getElementById("table").innerHTML = statusValue;
         });
     </script>
