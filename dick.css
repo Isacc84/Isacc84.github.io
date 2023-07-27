@@ -2,3 +2,46 @@
     font-family: "GenShinGothic-Medium-2";
     src: url("./GenShinGothic-Monospace-Bold-2.ttf");
 }
+
+div#Help,
+div#AIM,
+div#MoneyReward,
+div#mate,
+div#ware,
+div#memory,
+div#new {
+    text-align: center;
+    color: rgb(235, 236, 242);
+    border-radius: 9px 9px 0px 0px;
+    width: 5%;
+    transition: background-color 600ms, rotate 600ms;
+}
+
+div#Help:hover,
+div#AIM:hover,
+div#MoneyReward:hover,
+div#mate:hover,
+div#ware:hover,
+div#memory:hover,
+div#new:hover {
+    background-color: rgb(235, 236, 242);
+    color: rgb(7, 52, 136);
+}
+
+div#followS {
+    color: rgb(7, 52, 136);
+    background: rgba(235, 236, 242, 0.999);
+    border-radius: 4.9px;
+    transition: background-color 200ms, border 200ms, border-radius 200ms;
+}
+
+div#followS:hover {
+    color: rgb(235, 236, 242);
+    border: 1px solid rgb(235, 236, 242);
+    background: rgb(7, 52, 136);
+}
+
+div#connect,
+div#login {
+    transition: margin-top 200ms;
+}
