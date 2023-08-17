@@ -35,11 +35,11 @@ div#ware:hover,
 div#memory:hover,
 div#new:hover {
     background-color: rgb(235, 236, 242);
-    color: rgb(38,105,141);
+    color: rgb(38, 105, 141);
 }
 
 div#followS {
-    color: rgb(38,105,141);
+    color: rgb(38, 105, 141);
     background: rgba(235, 236, 242, 0.999);
     border-radius: 4.9px;
     transition: background-color 200ms, border 200ms, border-radius 200ms;
@@ -53,19 +53,20 @@ div#dic {
 div#followS:hover {
     color: rgb(235, 236, 242);
     border: 1px solid rgb(235, 236, 242);
-    background: rgb(38,105,141);
+    background: rgb(38, 105, 141);
 }
 
 div#connect,
 div#titleBox,
 div#login,
-svg#svg {
-    transition: margin-top 200ms;
+svg#svg,
+div#index {
+    transition: margin-top 1s;
 }
 
 div#floating {
-    transition:margin-top 1s;
-    position:fixed;
+    transition: margin-top 1s;
+    position: fixed;
     width: 100%;
     background-color: rgb(235, 236, 242);
 }

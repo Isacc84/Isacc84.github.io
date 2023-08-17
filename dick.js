@@ -24,6 +24,10 @@ const SOStext = document.getElementById("SOStext");
 const dic = document.getElementById("dic");
 const dickSvg = document.getElementById("dickSvg");
 const index_logo = document.getElementById("index_logo");
+const index = document.getElementById("index");
+const tex = document.getElementById("tex");
+const tex0 = document.getElementById("tex0");
+const tex1 = document.getElementById("tex1");
 const memory = document.getElementById("memory");
 const windowHeight = window.innerHeight;
 const windowWidth = window.innerWidth;
@@ -93,7 +97,7 @@ function autoTable(windowHeight, windowWidth) {
             if (checkElement(follow)) follow.style.lineHeight = parseInt(windowWidth * 0.001 * 20.9) + "px";
             if (checkElement(followxs)) followxs.style.fontSize = parseInt(windowHeight * 0.018) + "px";
             if (checkElement(dic)) dic.style.fontSize = parseInt(windowHeight * 0.018) + "px";
-            if (checkElement(dickSvg)) dickSvg.setAttribute("height", parseInt(windowHeight * (0.90 - 0.06)) + "px");
+            if (checkElement(dickSvg)) dickSvg.setAttribute("height", parseInt(windowHeight * (0.935 - 0.06)) + "px");
         }
     }
     if (checkElement(windowHeight) && checkElement(windowWidth) && isPhone) {
@@ -133,6 +137,10 @@ if (checkElement(connect)) connect.onmouseout = () => { connect.style.marginTop 
 if (checkElement(floating)) floating.onmouseleave = () => {
     if (checkElement(floating)) { 
         floating.style.display = "flex"; 
+        index.style.marginTop = "-50%"; 
+        tex.style.display = ""; 
+        tex0.style.display = ""; 
+        tex1.style.display = ""; 
         floating.style.marginTop = "-10.9%";
     }
 };
@@ -140,6 +148,10 @@ if (checkElement(floating)) floating.onmouseleave = () => {
 if (checkElement(follow)) follow.onmouseenter = () => {
     if (checkElement(floating)) { 
         floating.style.display = "flex"; 
+        index.style.marginTop = "-40%"; 
+        tex.style.display = "none"; 
+        tex0.style.display = "none"; 
+        tex1.style.display = "none"; 
         floating.style.marginTop = "6%";
     }
 };
