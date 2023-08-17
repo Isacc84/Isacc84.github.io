@@ -1,6 +1,16 @@
 @font-face {
+    font-family: "杨任东竹石体-Light";
+    src: url("./杨任东竹石体-Light.ttf");
+}
+
+@font-face {
     font-family: "GenShinGothic-Medium-2";
     src: url("./GenShinGothic-Monospace-Bold-2.ttf");
+}
+
+@font-face {
+    font-family: "HongLeiBanShuJianTi-2";
+    src: url("./HongLeiBanShuJianTi-2.ttf");
 }
 
 div#Help,
@@ -25,23 +35,37 @@ div#ware:hover,
 div#memory:hover,
 div#new:hover {
     background-color: rgb(235, 236, 242);
-    color: rgb(7, 52, 136);
+    color: rgb(38,105,141);
 }
 
 div#followS {
-    color: rgb(7, 52, 136);
+    color: rgb(38,105,141);
     background: rgba(235, 236, 242, 0.999);
     border-radius: 4.9px;
     transition: background-color 200ms, border 200ms, border-radius 200ms;
 }
 
+div#dic {
+    margin-top: -1%;
+    transition: rotate 200ms;
+}
+
 div#followS:hover {
     color: rgb(235, 236, 242);
     border: 1px solid rgb(235, 236, 242);
-    background: rgb(7, 52, 136);
+    background: rgb(38,105,141);
 }
 
 div#connect,
-div#login {
+div#titleBox,
+div#login,
+svg#svg {
     transition: margin-top 200ms;
+}
+
+div#floating {
+    transition:margin-top 1s;
+    position:fixed;
+    width: 100%;
+    background-color: rgb(235, 236, 242);
 }

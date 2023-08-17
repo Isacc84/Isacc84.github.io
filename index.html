@@ -3,47 +3,70 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>来人&nbsp;|&nbsp;让大家的生活更有保障</title>
+    <title>万事屋&nbsp;|&nbsp;让大家的生活更有保障</title>
     <link rel="icon" type="image/png" sizes="560x560" href="./ssb.png">
     <link rel="stylesheet" type="text/css" href="./dick.css" />
 </head>
 
 <body>
-    <div>
-        <div id="fistTitle" style="display: flex;
-            margin-left: -1%;width: 101.4%;margin-top: -1%;background-color: rgb(7, 52, 136);">
-            <div id="connect" class="text" style="font-family:GenShinGothic-Medium-2;
-            font-weight: bold;font-size:x-large;color: rgb(235,236,242);">联系</div>
-            <div id="login" class="text" style="font-family:GenShinGothic-Medium-2;
-            font-weight: bold;font-size:x-large;color: rgb(235,236,242);">登录</div>
-            <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                <polyline points="0,0 3,3 6,0" style="fill:  rgb(7,52,136);stroke: rgb(235,236,242);stroke-width:1;" />
-            </svg>
+    <div id="titleBox" style="z-index: 3;margin-top: 0%;">
+        <div id="floating" style="margin-top: -10.9%;">
+            <div style="display: flex;">
+                <img id="yorozuyaL" alt="万事屋" src="./ssb.png" style="opacity: 0.6;" />
+                <img id="yorozuyaF" alt="万事屋" src="./dick.png" style="opacity: 0.6;" />
+            </div>
         </div>
-        <div id="title" style="display: flex;box-shadow:0 1px 100px 2px rgb(7,52,136);
-            margin-left: -1%;width: 101.4%;margin-top: -1%;background-color: rgb(7,52,136);">
+        <div id="title" style="display: flex;box-shadow:0 1px 100px 2px rgba(38,105,141,1);
+            margin-left: -1%;width: 101.4%;margin-top: 1.5%;position:fixed;background-color: rgba(38,105,141,1);">
             <img id="logo" src="./sss_e.png" alt="logo" style="width: 4%;" />
-            <div id="titletext" class="text" style="font-family:GenShinGothic-Medium-2;
-            font-weight: bold;font-size:x-large;color: rgb(235,236,242);">来人</div>
+            <div id="titletext" class="text" style="font-family:杨任东竹石体-Light;
+            font-weight: bold;font-size:x-large;color: rgb(235,236,242);">万事屋</div>
             <div id="Help" class="text" style="font-family:GenShinGothic-Medium-2;
             font-weight: bold;font-size:x-large;">求救</div>
             <div id="AIM" class="text" style="font-family:GenShinGothic-Medium-2;
             font-weight: bold;font-size:x-large;">帮办</div>
             <div id="MoneyReward" class="text" style="font-family:GenShinGothic-Medium-2;
             font-weight: bold;font-size:x-large;">赏金</div>
+            <div id="new" class="text" style="font-family:GenShinGothic-Medium-2;
+            font-weight: bold;font-size:x-large;">委托</div>
             <div id="mate" class="text" style="font-family:GenShinGothic-Medium-2;
             font-weight: bold;font-size:x-large;">伴侣</div>
             <div id="ware" class="text" style="font-family:GenShinGothic-Medium-2;
             font-weight: bold;font-size:x-large;">加入</div>
-            <div id="new" class="text" style="font-family:GenShinGothic-Medium-2;
-            font-weight: bold;font-size:x-large;">意见</div>
             <div id="memory" class="text" style="font-family:GenShinGothic-Medium-2;
             font-weight: bold;font-size:x-large;">公告</div>
             <div id="follow" class="divSpa" style="text-align:center;">
-            <div id="followS" class="text" style="font-family:GenShinGothic-Medium-2;
-            font-weight: bold;font-size:x-large;">下载&nbsp;▼</div>
+                <div id="followS" style="display: flex;">
+                    <div id="follows" class="text" style="font-family:GenShinGothic-Medium-2;
+            font-weight: bold;font-size:x-large;">下载&nbsp;</div>
+                    <div id="dic">▼</div>
+                </div>
             </div>
         </div>
+        <div id="fistTitle"
+            style="display: flex;position:fixed;margin-left: -1%;width: 101.4%;margin-top: -1%;background-color: rgba(38,105,141,1);">
+            <div id="connect" class="text" style="font-family:GenShinGothic-Medium-2;
+            font-weight: bold;font-size:x-large;color: rgb(235,236,242);">联系</div>
+            <div id="login" class="text" style="font-family:GenShinGothic-Medium-2;
+            font-weight: bold;font-size:x-large;color: rgb(235,236,242);">登录</div>
+            <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <polyline points="0,0 3,3 6,0"
+                    style="fill:  rgba(38,105,141,1); stroke: rgb(235,236,242);stroke-width:3;" />
+            </svg>
+        </div>
+    </div>
+    <div style="width: 100%;z-index: 0;">
+        <svg id="dickSvg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100.2%" style="margin-top: 6%;">
+            <circle cx="0%" cy="90%" r="30%" stroke="rgb(221,234,219)" stroke-width="10%" fill="rgb(221,234,219)"
+                style="filter: blur(2rem);" />
+            <circle cx="100%" cy="90%" r="30%" stroke="rgb(238,223,205)" stroke-width="10%" fill="rgb(238,223,205)"
+                style="filter: blur(2rem);" />
+            <circle cx="50%" cy="350%" r="150%" stroke="rgb(44,104,150)" stroke-width="10%" fill="rgb(44,104,150)"
+                style="filter: blur(0.0rem);" />
+        </svg>
+    </div>
+    <div style="z-index: 1;margin-top: -50%;">
+        <img id="index_logo" alt="万事屋" src="./dick.png" style="opacity: 0.6;margin-left: 42.6%;margin-top: 10%;" />
     </div>
 </body>
 <script type="text/javascript" src="./dick.js"></script>
